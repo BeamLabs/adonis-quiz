@@ -29,3 +29,11 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
+### Running the Project
+Run the following command to serve the project in development mode.
+It's recommended to use something like pm2 or forever to run in production.
+
+```js
+adonis serve
+```
