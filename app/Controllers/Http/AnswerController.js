@@ -1,33 +1,31 @@
 'use strict'
 
 class AnswerController {
-  index({request, response}) {
-    console.log("request: ", request);
-    console.log("response: ", response);
-    return response.json({name: "Hello"});
+  index({request, response, view}) {
+    return view.render('answer');
   }
 
-  create(request, response) {
+  create({request, response}) {
     console.log("Create for Answers hit")
   }
 
-  store() {
+  store({request, response}) {
     console.log("Store for Answers hit");
   }
 
-  show(params) {
-    console.log("Show for Answers hit. params: ", params);
+  show({request, response}) {
+    console.log("Show for Answers hit:");
   }
 
-  edit() {
+  edit({request, response}) {
     console.log("Edit for Answers hit");
   }
 
-  update() {
+  update({request, response}) {
     console.log("Update for Answers hit");
   }
 
-  destroy() {
+  destroy({request, response}) {
     console.log("Destroy for Answers hit");
   }
 }
