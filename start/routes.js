@@ -16,3 +16,10 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+Route.resource('answers', 'AnswerController')
+Route.resource('courses', 'CourseController')
+Route.resource('quizzes', 'QuizController')
+Route.resource('quiz-questions', 'QuizQuestionController')
+Route.resource('students', 'StudentController')
+Route.resource('teachers', 'TeacherController')
+Route.resource('users', 'UsersController')
